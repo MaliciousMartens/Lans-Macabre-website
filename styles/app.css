@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Cardo', serif;
+
+}

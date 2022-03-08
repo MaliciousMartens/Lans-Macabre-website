@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cardo', serif;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.open {
+  display: block !important;
+}
+
+.main-nav {
+  height: 2rem;
+  width: 100%-2rem;
+}
+
+@media (max-width: 40rem) {
+  .main-nav {
+    display:none;
+  }
+}
+
+.main-header {
+  background-color: rgb(42, 51, 48);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: whitesmoke;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display:none;
+  }
+}
+
+.main-header__brand {
+  height: 3.5rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand img {
+  height: 100%;
+  border-radius: 35px;
+}
+
+.main-nav {
+  text-align: right;
+  width: 100%;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 1rem;
+  text-align: right;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: middle;
+  text-align: right;
+}
+
+
+.main-nav__item a,
+.mobile-nav__item a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: whitesmoke;
+  border-bottom: 5px solid whitesmoke;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+}
+
+#banner {
+  background-image: url('../img/lemur.jpg');
+  width: 100vw;
+  height: 33vh;
+  position: relative;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 0;
+}
+
+.banner h1 {
+  margin-top:0;
+  padding: 10rem 5rem;
+  font-size: 5rem;
+}
+
+.main-info {
+  text-align: justify;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.projects {
+  /* display:grid;
+  grid-template-rows: [row-1-start] 30% [row-1-end row-2-start] 30% [row-2-end row-3-start] 30% ; */
+text-align: center;
+}
+
+.projects h1 {
+  text-align: center;
+}
+
+.projects p {
+  color: black;
+  text-align: center;
+  display: block;
+}
+
+.tile {
+  display: inline-block;
+  background-color: whitesmoke;
+  width:350px;
+  margin:2rem auto;
+  border-radius: 25px;
+ 
+}
+
+@media (min-width: 43rem) {
+  .tile {
+    width:200px;
+  }
+}
+
+.tile-image {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+/* .tile_erpegowyYak,
+.tile_LMPublishing,
+.tile_downloads,
+.tile_otherProjects,
+.tile_patronage,
+.tile_about {
+ width:100%;
+ background-color: yellowgreen;
+} */
+
+.tile-textContainer {
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.tile-textContainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.tile-textContainer a:hover,
+.tile-textContainer a:active {
+  text-decoration: underline;
+  font-weight: 700;
+  
+}
+
+.patronite {
+  text-align: center;
+}
+
+.main-footer {
+  background-color: rgb(42, 51, 48);
+  margin: 0;
+}
+
+.contact {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.main-footer__link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 0 3rem 0;
+
+}
+
+.main-footer__links {
+ 
+  text-align: center;
+  margin:0;
+}
+
+.main-footer__link a {
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color:white;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
