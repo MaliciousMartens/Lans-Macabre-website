@@ -3,7 +3,14 @@
 }
 
 body {
-  font-family: 'Cardo', serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-family: 'Fira Sans', sans-serif; */
+  font-family: 'Jost', sans-serif;
+   /* font-family: 'Niramit', sans-serif; */
+  
+  /* font-family: 'Cardo', serif; */
+
+ 
   background-color: black;
   color: whitesmoke;
   margin: 0;
@@ -31,7 +38,7 @@ body {
 
 @media (max-width: 40rem) {
   .main-nav {
-    display:none;
+    display: none;
   }
 }
 
@@ -41,6 +48,9 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
+  position: sticky;
+  top:0;
+  z-index: 200;
 }
 
 .toggle-button {
@@ -67,7 +77,7 @@ body {
 
 @media (min-width: 40rem) {
   .toggle-button {
-    display:none;
+    display: none;
   }
 }
 
@@ -99,14 +109,15 @@ body {
   list-style: none;
   vertical-align: middle;
   text-align: right;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
-
 
 .main-nav__item a,
 .mobile-nav__item a {
   text-decoration: none;
   color: whitesmoke;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 0.2rem 0;
 }
 
@@ -144,97 +155,6 @@ body {
   font-size: 1.5rem;
 }
 
-#banner {
-  background-image: url('../img/lemur.jpg');
-  width: 100vw;
-  height: 33vh;
-  position: relative;
-  background-repeat: no-repeat;
-  text-align: center;
-  margin-top: 0;
-}
-
-.banner h1 {
-  margin-top:0;
-  padding: 10rem 5rem;
-  font-size: 5rem;
-}
-
-.main-info {
-  text-align: justify;
-  font-size: 1rem;
-  padding: 1rem;
-}
-
-.projects {
-  /* display:grid;
-  grid-template-rows: [row-1-start] 30% [row-1-end row-2-start] 30% [row-2-end row-3-start] 30% ; */
-text-align: center;
-}
-
-.projects h1 {
-  text-align: center;
-}
-
-.projects p {
-  color: black;
-  text-align: center;
-  display: block;
-}
-
-.tile {
-  display: inline-block;
-  background-color: whitesmoke;
-  width:350px;
-  margin:2rem auto;
-  border-radius: 25px;
- 
-}
-
-@media (min-width: 43rem) {
-  .tile {
-    width:200px;
-  }
-}
-
-.tile-image {
-  width: 100%;
-  border-radius: 25px 25px 0 0;
-}
-
-/* .tile_erpegowyYak,
-.tile_LMPublishing,
-.tile_downloads,
-.tile_otherProjects,
-.tile_patronage,
-.tile_about {
- width:100%;
- background-color: yellowgreen;
-} */
-
-.tile-textContainer {
-  text-align: center;
-  padding: 2rem;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.tile-textContainer a {
-  text-decoration: none;
-  color: black;
-}
-
-.tile-textContainer a:hover,
-.tile-textContainer a:active {
-  text-decoration: underline;
-  font-weight: 700;
-  
-}
-
-.patronite {
-  text-align: center;
-}
-
 .main-footer {
   background-color: rgb(42, 51, 48);
   margin: 0;
@@ -250,24 +170,21 @@ text-align: center;
   display: inline-block;
   padding: 1rem 2rem;
   margin: 0 0 3rem 0;
-
 }
 
 .main-footer__links {
- 
   text-align: center;
-  margin:0;
+  margin: 0;
 }
 
 .main-footer__link a {
   text-decoration: none;
-  color:whitesmoke;
+  color: whitesmoke;
 }
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-  color:white;
+  color: white;
   font-weight: 500;
   text-decoration: underline;
 }
-
