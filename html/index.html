@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lans Macabre</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script src="../scripts/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/00e6198843.js" crossorigin="anonymous"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <div class="backdrop"></div>
+
+    <header class="main-header">
+      <div>
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a href="index.html" class="main-header__brand">
+          <img
+            src="../img/lans macabre_logo_bk_bez napisu.png"
+            alt="Lans Macabre - czachy pełne RPG-ów"
+          />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="about.html">O Nas</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#tiles">Projekty</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#patronite">Patronite</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="about.html">O Nas</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#tiles">Projekty</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#patronite">Patronite</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#contact">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="banner" id="banner">
+        <h1>Lans Macabre</h1>
+      </section>
+
+      <div class="main-info" id="about">
+        <h2>
+          Mamy czachy pełne RPG-ów! Piszemy i wydajemy scenariusze, nagrywamy
+          sesje i poradniki, rzucamy nasz styl na żer internetowym dyskutantom,
+          patronujemy systemom, które naprawdę lubimy, nawet jeśli nie są
+          idealne, lansujemy się na konwentach, pracujemy z młodzieżą,
+          prelegujemy, szukamy i tworzymy. Bywamy kontrowersyjni. A przede
+          wszystkim kochamy gry fabularne i uważamy, że to medium jest wciąż
+          jeszcze młode, niedocenione i skrywa w sobie wiele możliwości, które
+          warto odkrywać! 
+        </h2> 
+      </div>
+
+      <div class="projects" id="tiles">
+        <h1>PROJEKTY</h1>
+        <div class="tile tile_erpegowyYak" id="tile_erpegowyYak">
+          <img src="../img/kitku.jpg" class="tile-image" />
+          <div class="tile-textContainer">
+            <a href="erpegowyYak.html">Erpegowy Yak</a>
+          </div>
+        </div>
+        <div class="tile tile_LMPublishing" id="tile_LMPublishing">
+          <img src="../img/malpa.jpg" class="tile-image" />
+          <div class="tile-textContainer">
+            <a href="LMPublishing.html">LM Publishing</a>
+          </div>
+        </div>
+        <div class="tile tile_downloads" id="tile_downloads">
+          <img src="../img/koala.jpg" class="tile-image" />
+          <div class="tile-textContainer">
+            <a href="downloads.html">Materiały do pobrania</a>
+          </div>
+        </div>
+        <div class="tile tile_otherProjects" id="tile_otherProjects">
+          <img src="../img/krolik.jpg" class="tile-image" />
+          <div class="tile-textContainer">
+            <a href="otherProjects.html">Inne Projekty</a>
+          </div>
+        </div>
+        <div class="tile tile_patronage" id="tile_patronage">
+          <img src="../img/panda.webp" class="tile-image" />
+          <div class="tile-textContainer">
+            <a href="patronage.html">Patronujemy</a>
+          </div>
+        </div>
+        <!-- <div class="tile tile_about" id="tile_about">
+          <img src="../img/malpa.jpg" class="tile-image" />
+          <div class="tile-textContainer"><a href="about.html">O nas</a></div>
+        </div> -->
+      </div>
+
+      <div class="patronite" id="patronite">
+        <h1>Wesprzyj nas na Patronite</h1>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="contact" id="contact"><h1>Kontakt</h1></div>
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            
+            <a href="mailto:mydlin@mpm.com"><i class="fa-solid fa-at"></i> Lans Mydlina</a>
+          </li>
+          <li class="main-footer__link">
+            
+            <a href="https://www.facebook.com/LansMacabre"><i class="fa-brands fa-facebook-f"></i> FB</a>
+          </li>
+          <li class="main-footer__link">
+            
+            <a href="#"><i class="fa-solid fa-envelope"></i> DTRPG</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
